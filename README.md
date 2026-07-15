@@ -28,6 +28,7 @@ code --install-extension aileks.cinder-grove
 | `background` | `#131210` | Editor background |
 | `container` | `#1B1916` | Panels, sidebars, and popovers |
 | `surface` | `#23201C` | Raised and interactive regions |
+| `focused_surface` | `#34312D` | Neutral focused and debugging controls |
 | `overlay` | `#58534C` | Selections and active controls |
 | `text_muted` | `#58534C` | Disabled and lowest-emphasis text |
 | `muted_dim` | `#706A62` | Dimmed editor metadata |
