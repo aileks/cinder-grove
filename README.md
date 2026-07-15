@@ -66,7 +66,7 @@ Press `F5` in Visual Studio Code to open an Extension Development Host for live 
 ## Related
 
 - [Cinder Grove for Neovim](https://codeberg.org/aileks/cinder-grove.nvim)
-- [Issues and support](https://codeberg.org/aileks/cinder-grove-vscode/issues)
+- [Issues and support](https://codeberg.org/aileks/cinder-grove/issues)
 
 ## License
 
