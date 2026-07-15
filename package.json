@@ -34,11 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://codeberg.org/aileks/cinder-grove-vscode.git"
+    "url": "https://codeberg.org/aileks/cinder-grove.git"
   },
-  "homepage": "https://codeberg.org/aileks/cinder-grove-vscode",
+  "homepage": "https://codeberg.org/aileks/cinder-grove",
   "bugs": {
-    "url": "https://codeberg.org/aileks/cinder-grove-vscode/issues"
+    "url": "https://codeberg.org/aileks/cinder-grove/issues"
+  },
+  "vsce": {
+    "baseImagesUrl": "https://codeberg.org/aileks/cinder-grove/raw/branch/main"
   },
   "scripts": {
     "check": "node scripts/validate-theme.mjs && vsce ls",
