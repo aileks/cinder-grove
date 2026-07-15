@@ -42,8 +42,15 @@ if (theme.semanticHighlighting !== true) {
 
 const primary = '#E17A3F';
 const secondary = '#879B5C';
-if (theme.colors.focusBorder !== primary) {
-  fail('primary cinder orange must drive focus accents');
+const info = '#6785A1';
+if (theme.colors.focusBorder !== info) {
+  fail('informational blue must keep global focus boundaries readable and restrained');
+}
+if (theme.colors['activityBar.activeBorder'] !== secondary) {
+  fail('grove green must drive workspace navigation accents');
+}
+if (theme.colors['commandCenter.debuggingBackground'] !== '#34312D') {
+  fail('debug command center must use the neutral focused surface');
 }
 if (theme.colors['gitDecoration.addedResourceForeground'] !== secondary) {
   fail('secondary grove green must drive additions');
@@ -129,6 +136,21 @@ for (const name of ['Comments', 'Punctuation', 'Brackets']) {
   if (!rule || contrastRatio(rule.settings.foreground, editorBackground) < 4.5) {
     fail(`${name.toLowerCase()} must meet 4.5:1 contrast against the editor background`);
   }
+}
+if (contrastRatio(
+  theme.colors['commandCenter.foreground'],
+  theme.colors['commandCenter.debuggingBackground']
+) < 4.5) {
+  fail('command center text must remain readable while debugging');
+}
+
+const palette = [
+  '#131210', '#1B1916', '#23201C', '#58534C', '#9A938A', '#ACA49B', '#BBB3A9', '#DDD5CA',
+  '#E17A3F', '#879B5C', '#B34A45', '#D9A441', '#6785A1', '#9A788F', '#58918C'
+];
+const serializedTheme = JSON.stringify(theme).toUpperCase();
+for (const color of palette) {
+  if (!serializedTheme.includes(color)) fail(`canonical palette color ${color} must be represented`);
 }
 
 const ignored = new Set(['.git', 'node_modules']);
