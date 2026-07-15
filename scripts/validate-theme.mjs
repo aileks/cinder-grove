@@ -52,6 +52,12 @@ if (theme.colors['activityBar.activeBorder'] !== secondary) {
 if (theme.colors['commandCenter.debuggingBackground'] !== '#34312D') {
   fail('debug command center must use the neutral focused surface');
 }
+for (const key of ['commandCenter.background', 'commandCenter.activeBackground']) {
+  if (theme.colors[key] !== '#34312D') fail(`${key} must use the neutral focused surface`);
+}
+if (theme.colors['statusBar.debuggingBackground'] !== '#34312D') {
+  fail('debug color fallback must remain neutral');
+}
 if (theme.colors['gitDecoration.addedResourceForeground'] !== secondary) {
   fail('secondary grove green must drive additions');
 }
