@@ -1,0 +1,60 @@
+{
+  "name": "cinder-grove",
+  "displayName": "Cinder Grove",
+  "description": "A warm, muted dark theme for Visual Studio Code that's easy on the eyes.",
+  "version": "1.0.0",
+  "publisher": "aileks",
+  "author": {
+    "name": "Caspian Harper"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "vscode": "^1.80.0",
+    "node": ">=24"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "color theme",
+    "warm",
+    "muted",
+    "earthy",
+    "cinder",
+    "grove",
+    "neovim"
+  ],
+  "pricing": "Free",
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#1B1916",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/aileks/cinder-grove-vscode.git"
+  },
+  "homepage": "https://codeberg.org/aileks/cinder-grove-vscode",
+  "bugs": {
+    "url": "https://codeberg.org/aileks/cinder-grove-vscode/issues"
+  },
+  "scripts": {
+    "check": "node scripts/validate-theme.mjs && vsce ls",
+    "package": "npm run check && vsce package"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "id": "cinder-grove",
+        "label": "Cinder Grove",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cinder-grove-color-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "3.9.2"
+  }
+}
