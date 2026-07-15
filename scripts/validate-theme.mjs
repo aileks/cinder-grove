@@ -40,6 +40,8 @@ if (theme.semanticHighlighting !== true) {
   fail('semantic highlighting must be enabled');
 }
 
+const chrome = '#171613';
+const container = '#1B1916';
 const primary = '#E17A3F';
 const secondary = '#879B5C';
 const info = '#6785A1';
@@ -65,6 +67,31 @@ for (const key of [
   'commandCenter.inactiveForeground'
 ]) {
   if (theme.colors[key] !== secondaryText) fail(`${key} must use secondary text`);
+}
+for (const key of [
+  'activityBar.background',
+  'sideBar.background',
+  'sideBarSectionHeader.background',
+  'titleBar.activeBackground',
+  'titleBar.inactiveBackground',
+  'statusBar.background',
+  'statusBar.noFolderBackground',
+  'editorGroupHeader.tabsBackground',
+  'editorGroupHeader.noTabsBackground',
+  'tab.inactiveBackground',
+  'tab.unfocusedInactiveBackground'
+]) {
+  if (theme.colors[key] !== chrome) fail(`${key} must use the subtle chrome background`);
+}
+for (const key of [
+  'panel.background',
+  'panelSectionHeader.background',
+  'menu.background',
+  'editorWidget.background',
+  'quickInput.background',
+  'textCodeBlock.background'
+]) {
+  if (theme.colors[key] !== container) fail(`${key} must use the container background`);
 }
 if (theme.colors['statusBar.debuggingBackground'] !== focusedSurface) {
   fail('debug color fallback must remain neutral');
