@@ -7,3 +7,4 @@
 - Rebalanced workbench accents toward grove green and the full canonical palette.
 - Kept the Command Center neutral across normal, hover, active, and debugging states.
 - Matched agent-enabled Command Center surfaces to the neutral palette with secondary text.
+- Applied a subtly lighter near-black shade to workbench chrome and sidebars.

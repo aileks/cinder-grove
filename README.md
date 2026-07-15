@@ -26,6 +26,7 @@ code --install-extension aileks.cinder-grove
 | Token | Hex | Common use |
 | --- | --- | --- |
 | `background` | `#131210` | App or editor background |
+| `chrome` | `#171613` | Workbench chrome |
 | `container` | `#1B1916` | Panels, popovers, and code blocks |
 | `surface` | `#23201C` | Raised and interactive regions |
 | `focused_surface` | `#34312D` | Neutral focused and debugging controls |
@@ -48,7 +49,7 @@ code --install-extension aileks.cinder-grove
 
 `secondary` and `success` intentionally share the grove green swatch.
 
-The VS Code-only muted swatches preserve the palette character while keeping small functional text readable.
+The VS Code-only chrome and muted swatches preserve the palette character while keeping workbench layers distinct and small functional text readable.
 
 ## Development
 
