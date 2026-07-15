@@ -2,7 +2,7 @@
 
 A warm, muted dark theme for Visual Studio Code that's easy on the eyes.
 
-![Cinder Grove in Visual Studio Code](https://codeberg.org/aileks/cinder-grove-vscode/raw/branch/main/assets/screenshot.png)
+![Cinder Grove in Visual Studio Code](./assets/screenshot.png)
 
 ## Features
 
@@ -25,8 +25,8 @@ code --install-extension aileks.cinder-grove
 
 | Token | Hex | Common use |
 | --- | --- | --- |
-| `background` | `#131210` | Editor background |
-| `container` | `#1B1916` | Panels, sidebars, and popovers |
+| `background` | `#131210` | App or editor background |
+| `container` | `#1B1916` | Panels, popovers, and code blocks |
 | `surface` | `#23201C` | Raised and interactive regions |
 | `focused_surface` | `#34312D` | Neutral focused and debugging controls |
 | `overlay` | `#58534C` | Selections and active controls |
