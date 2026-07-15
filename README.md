@@ -1,6 +1,7 @@
 # Cinder Grove
 
 A warm, muted dark theme for Visual Studio Code that's easy on the eyes.
+Adapted from my [Neovim theme](https://codeberg.org/aileks/cinder-grove.nvim)
 
 ![Cinder Grove in Visual Studio Code](./assets/screenshot.png)
 
@@ -49,11 +50,9 @@ code --install-extension aileks.cinder-grove
 
 `secondary` and `success` intentionally share the grove green swatch.
 
-The VS Code-only chrome and muted swatches preserve the palette character while keeping workbench layers distinct and small functional text readable.
-
 ## Development
 
-Requires Node.js 24 and npm.
+Requires Node.js 24+ and npm.
 
 ```sh
 npm ci
