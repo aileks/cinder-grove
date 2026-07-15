@@ -43,19 +43,30 @@ if (theme.semanticHighlighting !== true) {
 const primary = '#E17A3F';
 const secondary = '#879B5C';
 const info = '#6785A1';
+const focusedSurface = '#34312D';
+const secondaryText = '#ACA49B';
 if (theme.colors.focusBorder !== info) {
   fail('informational blue must keep global focus boundaries readable and restrained');
 }
 if (theme.colors['activityBar.activeBorder'] !== secondary) {
   fail('grove green must drive workspace navigation accents');
 }
-if (theme.colors['commandCenter.debuggingBackground'] !== '#34312D') {
-  fail('debug command center must use the neutral focused surface');
+for (const key of [
+  'commandCenter.background',
+  'commandCenter.activeBackground',
+  'commandCenter.debuggingBackground',
+  'agentStatusIndicator.background'
+]) {
+  if (theme.colors[key] !== focusedSurface) fail(`${key} must use the neutral focused surface`);
 }
-for (const key of ['commandCenter.background', 'commandCenter.activeBackground']) {
-  if (theme.colors[key] !== '#34312D') fail(`${key} must use the neutral focused surface`);
+for (const key of [
+  'commandCenter.foreground',
+  'commandCenter.activeForeground',
+  'commandCenter.inactiveForeground'
+]) {
+  if (theme.colors[key] !== secondaryText) fail(`${key} must use secondary text`);
 }
-if (theme.colors['statusBar.debuggingBackground'] !== '#34312D') {
+if (theme.colors['statusBar.debuggingBackground'] !== focusedSurface) {
   fail('debug color fallback must remain neutral');
 }
 if (theme.colors['gitDecoration.addedResourceForeground'] !== secondary) {

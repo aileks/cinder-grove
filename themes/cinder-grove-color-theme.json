@@ -134,15 +134,15 @@
     "menu.separatorBackground": "#58534C",
     "menu.border": "#58534C",
 
-    "commandCenter.foreground": "#BBB3A9",
-    "commandCenter.activeForeground": "#DDD5CA",
+    "commandCenter.foreground": "#ACA49B",
+    "commandCenter.activeForeground": "#ACA49B",
     "commandCenter.background": "#34312D",
     "commandCenter.activeBackground": "#34312D",
     "commandCenter.border": "#58534C",
     "commandCenter.activeBorder": "#879B5C",
     "commandCenter.inactiveBorder": "#58534C",
     "commandCenter.debuggingBackground": "#34312D",
-    "commandCenter.inactiveForeground": "#9A938A",
+    "commandCenter.inactiveForeground": "#ACA49B",
 
     "editor.background": "#131210",
     "editor.foreground": "#BBB3A9",
@@ -581,7 +581,7 @@
     "agentSessionReadIndicator.foreground": "#879B5C",
     "agentSessionSelectedBadge.border": "#879B5C",
     "agentSessionSelectedUnfocusedBadge.border": "#58534C",
-    "agentStatusIndicator.background": "#58918C",
+    "agentStatusIndicator.background": "#34312D",
     "aiCustomizationManagement.sashBorder": "#58534C"
   },
   "tokenColors": [
