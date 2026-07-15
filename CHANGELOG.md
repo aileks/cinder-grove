@@ -6,3 +6,4 @@
 - Raised comments, punctuation, line numbers, and muted editor UI to accessible contrast.
 - Rebalanced workbench accents toward grove green and the full canonical palette.
 - Kept the Command Center neutral across normal, hover, active, and debugging states.
+- Matched agent-enabled Command Center surfaces to the neutral palette with secondary text.
