@@ -7,7 +7,7 @@
   "author": {
     "name": "Caspian Harper"
   },
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.80.0",
     "node": ">=24"
@@ -34,14 +34,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://codeberg.org/aileks/cinder-grove.git"
+    "url": "https://github.com/aileks/cinder-grove.git"
   },
-  "homepage": "https://codeberg.org/aileks/cinder-grove",
+  "homepage": "https://github.com/aileks/cinder-grove",
   "bugs": {
-    "url": "https://codeberg.org/aileks/cinder-grove/issues"
+    "url": "https://github.com/aileks/cinder-grove/issues"
   },
   "vsce": {
-    "baseImagesUrl": "https://codeberg.org/aileks/cinder-grove/raw/branch/main"
+    "baseImagesUrl": "https://raw.githubusercontent.com/aileks/cinder-grove/main"
   },
   "scripts": {
     "check": "node scripts/validate-theme.mjs && vsce ls",
