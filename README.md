@@ -1,6 +1,9 @@
 # Cinder Grove
 
 A warm, muted dark theme for Visual Studio Code that's easy on the eyes.
+
+[Check it out on the Visual Studio Marketplace.](https://marketplace.visualstudio.com/items?itemName=aileks.cinder-grove)
+
 Adapted from my [Neovim theme](https://codeberg.org/aileks/cinder-grove.nvim)
 
 ![Cinder Grove in Visual Studio Code](./assets/screenshot.png)
