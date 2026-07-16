@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+- Added automated publishing to the Visual Studio Marketplace and Open VSX.
+
 ## 1.0.0
 
 - Initial Cinder Grove theme release for Visual Studio Code.

@@ -2,7 +2,7 @@
   "name": "cinder-grove",
   "displayName": "Cinder Grove",
   "description": "A warm, muted dark theme for Visual Studio Code that's easy on the eyes.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "aileks",
   "author": {
     "name": "Caspian Harper"

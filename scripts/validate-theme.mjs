@@ -14,9 +14,6 @@ const contribution = manifest.contributes?.themes?.[0];
 if (manifest.name !== 'cinder-grove' || manifest.publisher !== 'aileks') {
   fail('extension id must remain aileks.cinder-grove');
 }
-if (manifest.version !== '1.0.0') {
-  fail('initial release must remain 1.0.0');
-}
 if (manifest.main || manifest.browser || manifest.activationEvents) {
   fail('theme must remain contribution-only');
 }

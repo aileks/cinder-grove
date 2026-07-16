@@ -1,0 +1,47 @@
+name: publish extension
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - run: npm ci
+
+      - name: verify tag matches package version
+        run: |
+          expected="v$(node -p "require('./package.json').version")"
+          test "$GITHUB_REF_NAME" = "$expected"
+
+      - run: npm run check
+
+      - name: package extension
+        run: npx --no-install vsce package --out cinder-grove.vsix
+
+      - name: publish to visual studio marketplace
+        run: npx --no-install vsce publish --packagePath cinder-grove.vsix --skip-duplicate
+        env:
+          VSCE_PAT: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+
+      - name: publish to open vsx
+        run: npx --yes ovsx@1.0.2 publish cinder-grove.vsix --skip-duplicate
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
